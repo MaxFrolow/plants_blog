@@ -14,18 +14,29 @@
   </head>
 
   <body>
+    <!--Navifation-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light my-nav">
-        <a class="navbar-brand" href="#">Plants Plase</a>
+      <!--Nav panel-->  
+      
+      <!--Toggle button for small devices-->
+      <a class="navbar-brand" href="#">Plants Plase</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-      
+      <!--/Toggle button for small devices-->
+
+        
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         
           <ul class="navbar-nav mr-auto">
+            
+            <!--NavItem-->
             <li class="nav-item active">
               <a class="nav-link" href="#">News List</a>
             </li>
-
+            <!--/NavItem-->
+            
+            <!--NavItem-->
             <li class="nav-item dropdown" >
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Catalog
@@ -58,15 +69,20 @@
                 <a class="dropdown-item green-item" href="#">Something else here</a>
               </div>
             </li>
+            <!--/NavItem-->
             
           </ul>
+          <!--/Nav panel-->
+
+          <!--Search-->
           <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
           </form>
+          <!--/Search-->
         </div>
       </nav>
-
+      <!--/Navigation-->
 
       <header>
         <div class="head-sec">
@@ -162,41 +178,31 @@
         <script>
             function hider(el_hover, el_hider){}
             $(document).ready(function(){
-              $('.dropdown-submenu a.test ').on("mouseover", function(e){
-                $(this).next('ul').toggle(true);
-                e.preventDefault();
-                e.stopPropagation();
-                
+              $('.dropdown-submenu a.test').on("mouseover", function(e){
+                  $(this).next('ul').toggle(true);
+                  e.preventDefault();
+                  e.stopPropagation();
               });
             });
             $(document).ready(function(){
               $('.dropdown-submenu a.test ').on("mouseout", function(e){
-                setTimeout(
-                    () => {
-                        if($('.inside-menu:hover').length !=0){
-                            $(this).next('ul').toggle(true);
-                        }else{
-                            $(this).next('ul').toggle(false);
-                        };
-                        },
-                    50
-                    );
+                if($('.inside-menu:hover').length !=0){
+                    $(this).next('ul').toggle(true);
+                }else{
+                    $(this).next('ul').toggle(false);
+                }
               });
             });
             $(document).ready(function(){
-              $('.dropdown-submenu .inside-menu ').on("mouseout", function(e){
-                setTimeout(
-                    () => {
-                        if($('.inside-menu:hover').length !=0){
-                            $(this).toggle(true);
-                        }else{
-                            $(this).toggle(false);
-                        };
-                        },
-                    1
-                    );
+              $('.inside-menu ').on("mouseout", function(e){
+                if($('.inside-menu:hover').length !=0){
+                    $(this).toggle(true);
+                }else{
+                    $(this).toggle(false);
+                }
               });
             });
+            
     
 
 
