@@ -22,6 +22,11 @@ a{
   margin-top: 0px;
   z-index: 1;
 }
+.head-item{
+  margin-bottom:5%;
+}
+
+}
 .green-item a:active{
     background-color:rgb(202, 197, 197) !important;
   }
@@ -30,27 +35,99 @@ a{
   margin-top: 50px;
   margin-bottom: 50px;
 }
+
+  .head-image, .head-bg, .head-text{
+  position: relative;
+  width: 500px;
+  height: 400px;
+  }
+}
+
+  
+
 .head-image{
-  width:100%;
-  height: 395px;
-  opacity: 0.7;
+  z-index: 1;
+opacity: 0.6;
+
+  
 }
 .head-bg{
-  z-index: 1;
-  position: relative;
-  background-color: rgba(109, 0, 143, 0.3);
-  height: 395px;
-  width: 100%;
-  margin-top: -395px;  
+  z-index: 2;
+  background-color: rgb(109, 0, 143);
+margin-top: -400px;
+opacity: 0.3;
+
+
 }
 
 .head-text{
   position: relative;
-  z-index: 2;
-  height: 110px;
-  width: 100%;
-  margin-top: -110px;
-  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 3;
+  height:135px;
+  margin-top: -135px;
+  background-color: rgb(0, 0, 0 );
+  opacity: 0.5;
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 992px)  {
+  .head-image, .head-bg, .head-text{
+  position: relative;
+  width: 420px;
+  height: 324px;
+  }
+  .head-image{
+    z-index: 1;
+  opacity: 0.6;
+  
+    
+  }
+  .head-bg{
+    z-index: 2;
+    background-color: rgb(109, 0, 143);
+    margin-top: -324px;
+    opacity: 0.3;
+  
+  
+  }
+  
+  .head-text{
+    position: relative;
+    z-index: 3;
+    height:135px;
+    margin-top: -135px;
+    background-color: rgb(0, 0, 0 );
+    opacity: 0.5;
+  }
+}
+@media only screen and (max-width: 991px) and (min-width: 768px)  {
+  .head-image, .head-bg, .head-text{
+  position: relative;
+  width: 350px;
+  height: 280px;
+  }
+  .head-image{
+    z-index: 1;
+  opacity: 0.6;
+  
+    
+  }
+  .head-bg{
+    z-index: 2;
+    background-color: rgb(109, 0, 143);
+  margin-top: -280px;
+  opacity: 0.3;
+  
+  
+  }
+  
+  .head-text{
+    position: relative;
+    z-index: 3;
+    height:135px;
+    margin-top: -135px;
+    background-color: rgb(0, 0, 0 );
+    opacity: 0.5;
+  }
 }
 .category{
   color: rgba(221, 221, 221, 0.8);
@@ -64,11 +141,38 @@ a{
 
 .news-head{
   margin-left: 15px;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(219, 219, 219, 0.9);
   font-weight: 300;
   font-size: 0.8em;
 
 }
 .news-head:hover{
-  color: rgba(255, 255, 255, 1);
+  color: rgb(255, 255, 255);
+}
+
+.list-item{
+  margin-bottom: 4%;
+  margin-left: 0em;
+}
+.list-item img{
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}
+.list-item-bg{
+  position: relative;
+  z-index: 1;
+  background-color: rgb(104, 104, 104);
+  opacity: 0.7;
+  width: 100%;
+  height: 100%;
+}
+
+
+.list-item a{
+  position: relative;
+  z-index: 2;
+  color: rgb(63, 63, 63);
+  font-size: 0.8em;
 }
