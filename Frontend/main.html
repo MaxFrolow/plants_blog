@@ -14,12 +14,11 @@
   </head>
 
   <body>
-    <!--Navifation-->
+    <!--Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light my-nav">
-      <!--Nav panel-->  
-      
+      <!--Nav panel--> 
       <!--Toggle button for small devices-->
-      <a class="navbar-brand" href="#">Plants Plase</a>
+      <a class="navbar-brand" href="#">Plants Place</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -31,18 +30,18 @@
           <ul class="navbar-nav mr-auto">
             
             <!--NavItem-->
-            <li class="nav-item active">
+            <li class="nav-item nav-link">
               <a class="nav-link" href="#">News List</a>
             </li>
             <!--/NavItem-->
             
             <!--NavItem-->
-            <li class="nav-item dropdown" >
+            <li class="nav-item dropdown nav-link" >
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Catalog
               </a>
-              <div class="dropdown-menu green-item" aria-labelledby="navbarDropdown">
-                <div class="dropdown-submenu">
+              <div class="dropdown-menu my-dropdown" aria-labelledby="navbarDropdown">
+                <div class="dropdown-submenu dropdown">
                     <a class="test dropdown-item green-item" tabindex="-1" href="#">Flowers&nbsp;&nbsp;&rarr;</a>
                     <ul class="dropdown-menu inside-menu green-item">
                       <li><a class="dropdown-item green-item" tabindex="-1" href="#">2nd level dropdown</a></li>
@@ -54,7 +53,7 @@
                     </ul>
                 </div>
                 <div class="dropdown-submenu">
-                    <a class="test dropdown-item green-item" tabindex="-1" href="#">Trees&nbsp;&nbsp;&rarr;<span class="glyphicon glyphicon-play"></span></a>
+                    <a class="test dropdown-item my-dropdown" tabindex="-1" href="#">Trees&nbsp;&nbsp;&rarr;<span class="glyphicon glyphicon-play"></span></a>
                     <ul class="dropdown-menu inside-menu">
                       <li><a class="dropdown-item green-item" tabindex="-1" href="#">2nd level dropdown</a></li>
                       <li><a class="dropdown-item green-item" tabindex="-1" href="#">2nd level dropdown</a></li>
@@ -77,14 +76,24 @@
           <!--Search-->
           <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
           </form>
           <!--/Search-->
         </div>
       </nav>
       <!--/Navigation-->
 
-      <header>
+      <header class="super-content">
+      
+        <!--Header Banner-->
+        <div class="head-banner">
+          <img class="head-photo" src="images/photo-banner1.jpeg">
+          <div class="head-photo-text">
+            <h1>Something smart</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        </div>
+        <!--Header Banner-->
         <!--Header Posts-->
         <div class="head-sec">
           <div class="container head-sec">
@@ -92,8 +101,8 @@
                 
                 <!--HeadItem-->
                 <div class="col-md-6 col-sm-12 head-item">
-                    <img class="head-image" src="images/index.jpeg">
-                    <div class="head-bg"></div>
+                    <a href="#"><img class="head-image" src="images/index.jpeg"></a>
+                    <a href=""><div class="head-bg"></div></a>
                     <div class="head-text">
                         <div class="category"><p>Flowers</p></div>
                         <h3><a href=# class="news-head">Orchid is so beautiful<a/></h3>
@@ -105,8 +114,8 @@
                 
                 <!--HeadItem-->
                 <div class="col-md-6 col-sm-12 head-item">
-                    <img class="head-image " src="images/index.jpeg">
-                    <div class="head-bg"></div>
+                    <a href=""><img class="head-image " src="images/index.jpeg"></a>
+                    <a href=""><div class="head-bg"></div></a>
                     <div class="head-text">
                         <div class="category"><p>Trees</p></div>
                         <h3><a href=# class="news-head">Simple and beauty<a/></h3>
@@ -122,74 +131,233 @@
 
 
       <content>
+        
         <div class="container content-sec">
             <div class="row">
                 <!--List Section-->
-                <div class="col-md-8">
+                <div class="col-md-8 col-sm-8">
                     <div class="container">
                         <div class="row">
                           
-                       <!--ListItem-->
-                       <div class="col-md-7 col-lg-6 list-item">
-                        <div class="card" style="width: 18rem;">
-                            <img src="images/index.jpeg" class="card-img-top" alt="...">
-                            <div class="list-item-bg"></div>
-                            <div class="card-body">
-                              <h4><a href="#">Something about plants</a></h4>
-                              <p class="card-text"><a href="#">Some quick example text to build on the card title and make up the bulk of the card's content.</a></p>
-                            </div>
+                          <!--ListItem-->
+                          <div class="col-md-8 col-lg-6 list-item">
+                            <div class="card" style="width: 18rem;">
+                              <a href=""><img src="images/index.jpeg" class="card-img-top" alt="..."></a>
+                                <div class="list-item-bg"></div>
+                                <div class="card-body">
+                                  <h4><a href="#">Something about plants</a></h4>
+                                  <p class="card-text"><a href="#">Some quick example text to build on the card title and make up the bulk of the card's con...</a></p>
+                                  <div class="list-created"><p>Created: 2020.02.24 by Max Frolow</p></div>
+                                </div>
+                              </div>
                           </div>
-                      </div>
-                    <!--/ListItem-->
-                    <!--ListItem-->
-                    <div class="col-md-7 col-lg-6 list-item">
-                      <div class="card" style="width: 18rem;">
-                          <img src="images/index.jpeg" class="card-img-top" alt="...">
-                          <div class="list-item-bg"></div>
-                          <div class="card-body">
-                            <h4><a href="#">Something about plants</a></h4>
-                            <p class="card-text"><a href="#">Some quick example text to build on the card title and make up the bulk of the card's content.</a></p>
-                          </div>
-                        </div>
-                    </div>
-                  <!--/ListItem-->
-                  <!--ListItem-->
-                  <div class="col-md-7 col-lg-6 list-item">
-                    <div class="card" style="width: 18rem;">
-                        <img src="images/index.jpeg" class="card-img-top" alt="...">
-                        <div class="list-item-bg"></div>
-                        <div class="card-body">
-                          <h4><a href="#">Something about plants</a></h4>
-                          <p class="card-text"><a href="#">Some quick example text to build on the card title and make up the bulk of the card's content.</a></p>
-                        </div>
-                      </div>
-                  </div>
-                <!--/ListItem-->
-                <!--ListItem-->
-                <div class="col-md-7 col-lg-6 list-item">
-                  <div class="card" style="width: 18rem;">
-                      <img src="images/index.jpeg" class="card-img-top" alt="...">
-                      <div class="list-item-bg"></div>
-                      <div class="card-body">
-                        <h4><a href="#">Something about plants</a></h4>
-                        <p class="card-text"><a href="#">Some quick example text to build on the card title and make up the bulk of the card's content.</a></p>
-                      </div>
-                    </div>
-                </div>
-              <!--/ListItem-->
+                        <!--/ListItem-->
 
+                        <!--ListItem-->
+                        <div class="col-md-8 col-lg-6 list-item">
+                          <div class="card" style="width: 18rem;">
+                            <a href=""><img src="images/index.jpeg" class="card-img-top" alt="..."></a>
+                              <div class="list-item-bg"></div>
+                              <div class="card-body">
+                                <h4><a href="#">Something about plants</a></h4>
+                                <p class="card-text"><a href="#">Some quick example text to build on the card title and make up the bulk of the card's con...</a></p>
+                                <div class="list-created"><p>Created: 2020.02.24 by Max Frolow</p></div>
+                              </div>
+                            </div>
                         </div>
+                        <!--/ListItem-->
+
+                        <!--ListItem-->
+                        <div class="col-md-8 col-lg-6 list-item">
+                          <div class="card" style="width: 18rem;">
+                            <a href=""><img src="images/index.jpeg" class="card-img-top" alt="..."></a>
+                              <div class="list-item-bg"></div>
+                              <div class="card-body">
+                                <h4><a href="#">Something about plants</a></h4>
+                                <p class="card-text"><a href="#">Some quick example text to build on the card title and make up the bulk of the card's con...</a></p>
+                                <div class="list-created"><p>Created: 2020.02.24 by Max Frolow</p></div>
+                              </div>
+                            </div>
+                        </div>
+                        <!--/ListItem-->
+
+                        <!--ListItem-->
+                        <div class="col-md-8 col-lg-6 list-item">
+                          <div class="card" style="width: 18rem;">
+                            <a href=""><img src="images/index.jpeg" class="card-img-top" alt="..."></a>
+                              <div class="list-item-bg"></div>
+                              <div class="card-body">
+                                <h4><a href="#">Something about plants</a></h4>
+                                <p class="card-text"><a href="#">Some quick example text to build on the card title and make up the bulk of the card's con...</a></p>
+                                <div class="list-created"><p>Created: 2020.02.24 by Max Frolow</p></div>
+                              </div>
+                            </div>
+                        </div>
+                        <!--/ListItem-->
+
+                        <!--ListItem-->
+                        <div class="col-md-8 col-lg-6 list-item">
+                          <div class="card" style="width: 18rem;">
+                            <a href=""><img src="images/index.jpeg" class="card-img-top" alt="..."></a>
+                              <div class="list-item-bg"></div>
+                              <div class="card-body">
+                                <h4><a href="#">Something about plants</a></h4>
+                                <p class="card-text"><a href="#">Some quick example text to build on the card title and make up the bulk of the card's con...</a></p>
+                                <div class="list-created"><p>Created: 2020.02.24 by Max Frolow</p></div>
+                              </div>
+                            </div>
+                        </div>
+                        <!--/ListItem-->
+
+                        <!--ListItem-->
+                        <div class="col-md-8 col-lg-6 list-item">
+                          <div class="card" style="width: 18rem;">
+                            <a href=""><img src="images/index.jpeg" class="card-img-top" alt="..."></a>
+                              <div class="list-item-bg"></div>
+                              <div class="card-body">
+                                <h4><a href="#">Something about plants</a></h4>
+                                <p class="card-text"><a href="#">Some quick example text to build on the card title and make up the bulk of the card's con...</a></p>
+                                <div class="list-created"><p>Created: 2020.02.24 by Max Frolow</p></div>
+                              </div>
+                            </div>
+                        </div>
+                        <!--/ListItem-->
+
+                        <!--ListItem-->
+                        <div class="col-md-8 col-lg-6 list-item">
+                          <div class="card" style="width: 18rem;">
+                            <a href=""><img src="images/index.jpeg" class="card-img-top" alt="..."></a>
+                              <div class="list-item-bg"></div>
+                              <div class="card-body">
+                                <h4><a href="#">Something about plants</a></h4>
+                                <p class="card-text"><a href="#">Some quick example text to build on the card title and make up the bulk of the card's con...</a></p>
+                                <div class="list-created"><p>Created: 2020.02.24 by Max Frolow</p></div>
+                              </div>
+                            </div>
+                        </div>
+                        <!--/ListItem-->
+
+                        <!--ListItem-->
+                        <div class="col-md-8 col-lg-6 list-item">
+                          <div class="card" style="width: 18rem;">
+                            <a href=""><img src="images/index.jpeg" class="card-img-top" alt="..."></a>
+                              <div class="list-item-bg"></div>
+                              <div class="card-body">
+                                <h4><a href="#">Something about plants</a></h4>
+                                <p class="card-text"><a href="#">Some quick example text to build on the card title and make up the bulk of the card's con...</a></p>
+                                <div class="list-created"><p>Created: 2020.02.24 by Max Frolow</p></div>
+                              </div>
+                            </div>
+                        </div>
+                        <!--/ListItem-->
+
+                        <!--ListItem-->
+                        <div class="col-md-8 col-lg-6 list-item">
+                          <div class="card" style="width: 18rem;">
+                            <a href=""><img src="images/index.jpeg" class="card-img-top" alt="..."></a>
+                              <div class="list-item-bg"></div>
+                              <div class="card-body">
+                                <h4><a href="#">Something about plants</a></h4>
+                                <p class="card-text"><a href="#">Some quick example text to build on the card title and make up the bulk of the card's con...</a></p>
+                                <div class="list-created"><p>Created: 2020.02.24 by Max Frolow</p></div>
+                              </div>
+                            </div>
+                        </div>
+                        <!--/ListItem-->
+
+                        <!--ListItem-->
+                        <div class="col-md-8 col-lg-6 list-item">
+                          <div class="card" style="width: 18rem;">
+                            <a href=""><img src="images/index.jpeg" class="card-img-top" alt="..."></a>
+                              <div class="list-item-bg"></div>
+                              <div class="card-body">
+                                <h4><a href="#">Something about plants</a></h4>
+                                <p class="card-text"><a href="#">Some quick example text to build on the card title and make up the bulk of the card's con...</a></p>
+                                <div class="list-created"><p>Created: 2020.02.24 by Max Frolow</p></div>
+                              </div>
+                            </div>
+                        </div>
+                        <!--/ListItem-->
+                        <nav aria-label="...">
+                          <ul class="pagination">
+                            <li class="page-item disabled">
+                              <span class="page-link">Previous</span>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item active">
+                              <span class="page-link">
+                                2
+                                <span class="sr-only">(current)</span>
+                              </span>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                              <a class="page-link" href="#">Next</a>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                  
                     </div>
                 </div>
                 <!--/List Section-->
 
                 <!--Side Bar-->
-                <div class="col-md-4">
-                  <div class="side-bar">
-                    <ul class="tags-items">
-                      
-                    </ul>
+                <div class="col-md-4 col-sm-3 side-bar">
+                  
+                  <!--Tag Panel-->
+                  <div class="teg-panel">
+                    <p class="tag-paragraph">
+                      <a class="teg" href="#">Tree</a>
+                      <a class="teg" href="#">Flower</a>
+                      <a class="teg" href="#">Cactus</a>
+                      <a class="teg" href="#">Liana</a>
+                      <a class="teg" href="#">Big_Leaves</a>
+                      <a class="teg" href="#">Unassuming</a>
+                      <a class="teg" href="#">Tree</a>
+                      <a class="teg" href="#">Flower</a>
+                      <a class="teg" href="#">Cactus</a>
+                      <a class="teg" href="#">Liana</a>
+                      <a class="teg" href="#">Big_Leaves</a>
+                      <a class="teg" href="#">unassuming</a>
+                    </p>                 
                   </div>  
+                  <!--/Tag Panel-->
+                  <div class="favorite-bar">
+                    <h4>Favorites Posts</h4>
+                    <!--Favorite Post-->
+                    <div class="favorite">
+                      <img class="favorite-image" src="images/index.jpeg">
+                      <a href="#"><div class="favorite-bg"></div></a>
+                      <div class="favorite-text">
+                        <h5><a href="#">Favorite post</h5></a>
+                        <p><a href="#">Few words from favorite post</a></p>
+                      </div>
+                    </div>
+                    <!--/Favorite Post-->
+
+                    <!--Favorite Post-->
+                    <div class="favorite">
+                      <img class="favorite-image" src="images/index.jpeg">
+                      <a href="#"><div class="favorite-bg"></div></a>
+                      <div class="favorite-text">
+                        <h5><a href="#">Favorite post</h5></a>
+                        <p><a href="#">Few words from favorite post</a></p>
+                      </div>
+                    </div>
+                    <!--/Favorite Post-->
+
+                    <!--Favorite Post-->
+                    <div class="favorite">
+                      <img class="favorite-image" src="images/index.jpeg">
+                      <a href="#"><div class="favorite-bg"></div></a>
+                      <div class="favorite-text">
+                        <h5><a href="#">Favorite post</h5></a>
+                        <p><a href="#">Few words from favorite post</a></p>
+                      </div>
+                    </div>
+                    <!--/Favorite Post-->
+                  </div>
                 </div>
                 <!--/Side Bar-->
             </div>
@@ -199,7 +367,33 @@
 
       </content>
 
-
+      <footer>
+        <div class="footer-content">
+        <div class="container">
+          <div class="row">
+  
+            <div class="col-md-4 col-lg-4 col-sm-12 footer-logo">
+              <h2><a href="">©2020 Plant Place</a></h2>
+            </div>
+            <div class="col-md-3 col-lg-3 col-sm-12 footer-links">
+              <h5>Find by Tags</h5>
+              <ul class="footer-links-list">
+                <li><a class="footer-link" href="">Trees</a></li>
+                <li><a class="footer-link" href="">Cactuses</a></li>
+                <li><a class="footer-link" href="">Flowers</a></li>
+                <li><a class="footer-link" href="">Big Leavs</a></li>
+                <li><a class="footer-link" href="">Unassuming</a></li>
+                <li><a class="footer-link" href="">Liana</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-12 footer-advertisement-q">
+              <h4><a href="">Contact us</a></h4>
+              <p><a href="">If you saw some mistakes or have a questions you can write us. Just click here.</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </footer>
 
 
 
