@@ -1,3 +1,9 @@
+@media only screen and (min-width:880px){
+.row{
+  width: 115%;
+  margin-left: -2%;
+  } 
+}
 a:hover{
   text-decoration: none;
   color: rgb(0, 0, 0);
@@ -199,7 +205,8 @@ a{
 
 .list-item{
   margin-bottom: 4%;
-  margin-left: 0em;
+  margin-left: 30px;
+
 }
 .list-item img{
   position: relative;
@@ -259,6 +266,7 @@ a{
 .side-bar{
   margin-bottom: 100px;
   margin-top: 30px;
+  
 }
 .favorite{
   margin-bottom: 30px;
@@ -300,7 +308,7 @@ a{
 
   .favorite-image{
     height: 160px;
-    weight:200px;
+    width:200px;
   }
   .favorite-bg{
     height:160px;
@@ -382,7 +390,7 @@ footer{
 }
 .footer-links ul{
   list-style-type: none;
-  align: left;
+  align-items: left;
   padding-left: 0px;
   font-weight: 300;
 }
@@ -449,3 +457,12 @@ footer{
     color: rgba(0, 0, 0, 1)
   } 
 }
+.post{
+  margin-left: -5%;
+}
+@media only screen and (max-width:768px){
+  .post{
+    width: 115%;
+    margin-left: -4%;
+    } 
+  }
