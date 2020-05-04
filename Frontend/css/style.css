@@ -494,6 +494,11 @@ footer{
   margin-left: 50px;
   margin-bottom: 120px;
 }
+@media only screen and (max-width:1200px) and (min-width: 991px){
+  .tag-item-block{
+    margin-right: -40px;
+  }
+}
 .tag-item{
   border: 1px solid black;
   border-radius: 15px;
@@ -521,4 +526,8 @@ footer{
 .catalog-pagination{
   margin-left: 50px;
   margin-top: 50px;
+}
+.category-search{
+  margin-bottom: 50px;
+  margin-left: -30px;
 }
