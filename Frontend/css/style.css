@@ -1,9 +1,4 @@
-@media only screen and (min-width:880px){
-.row{
-  width: 115%;
-  margin-left: -2%;
-  } 
-}
+
 a:hover{
   text-decoration: none;
   color: rgb(0, 0, 0);
@@ -117,10 +112,10 @@ a{
 .head-text{
   position: relative;
   z-index: 3;
-  height:135px;
-  margin-top: -135px;
+  height:120px;
+  margin-top: -120px;
   background-color: rgb(0, 0, 0 );
-  opacity: 0.5;
+  opacity: 0.5; 
 }
 
 @media only screen and (max-width: 1199px) and (min-width: 992px)  {
@@ -206,6 +201,7 @@ a{
 .list-item{
   margin-bottom: 4%;
   margin-left: 30px;
+  margin-right: 20px;
 
 }
 .list-item img{
@@ -264,12 +260,20 @@ a{
   line-height: 250%;
 }
 .side-bar{
+  margin-left: 80px;
   margin-bottom: 100px;
   margin-top: 30px;
-  
+  max-width: 250px;
 }
+@media only screen and (max-width: 991px){
+  .side-bar{
+    margin-left: 5px;
+  }
+}
+
 .favorite{
   margin-bottom: 30px;
+  max-width: 250px;
 }
 
 .favorite-image{
@@ -466,3 +470,55 @@ footer{
     margin-left: -4%;
     } 
   }
+@media only screen and (max-width:768px){
+  .post{
+    width: 115%;
+    margin-left: -4%;
+    } 
+  }
+  @media only screen and (max-width:768px){
+    .post{
+      width: 110%;
+      margin-left: -4%;
+
+      } 
+    }
+
+
+.text-block{
+  margin-left: 60px;
+}
+
+.tag-item-block{
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-bottom: 120px;
+}
+.tag-item{
+  border: 1px solid black;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+.main-tag-text{
+  margin-top: 20px;
+}
+.main-tag-text h3, .main-tag-text p{
+  color: rgba(0, 0, 0, 0.8);
+}
+.catalog-img{
+  margin-top: 20px;
+  width: 250px;
+  height: 200px;
+  margin-bottom: 15px;
+  opacity: 0.85;
+}
+ .catalog-img:hover{
+  opacity: 1;
+}
+.main-tag-text h3:hover, .main-tag-text p:hover{
+  color: rgba(0, 0, 0, 1);
+}
+.catalog-pagination{
+  margin-left: 50px;
+  margin-top: 50px;
+}
