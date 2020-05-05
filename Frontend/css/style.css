@@ -248,7 +248,7 @@ a{
   color: rgba(0, 0, 0, 1)
 }
 
-.teg-panel a{
+.tag{
   background-color: rgb(70, 70, 70);
   color: rgb(216, 215, 215);
   padding: 5px;
@@ -256,7 +256,10 @@ a{
   padding-right: 10px;
   border-radius: 15px;
 }
-.teg-panel p{
+.tag:hover{
+color: rgba(255, 255, 255, 1);
+}
+.tag-panel p{
   line-height: 250%;
 }
 .side-bar{
@@ -503,6 +506,12 @@ footer{
   border: 1px solid black;
   border-radius: 15px;
   margin-bottom: 15px;
+  padding-bottom: 20px;
+}
+@media only screen and (max-width:990px){
+  .tag-item{
+  padding-left: 0px;
+  }
 }
 .main-tag-text{
   margin-top: 20px;
@@ -517,6 +526,38 @@ footer{
   margin-bottom: 15px;
   opacity: 0.85;
 }
+@media only screen and (max-width:1150px) and (min-width:991px){
+  .catalog-img{
+    width: 200px;
+    height: 160px;
+    margin-top: 30px;
+  }
+  .text-block{
+    margin-left: 50px;
+  }
+}
+@media only screen and (max-width:990px){
+  .catalog-img{
+    width:200px;
+    height:160px;
+    margin-left: 10px;
+  }
+  .tag-item{
+    margin-right: 20px;
+  }
+  .text-block{
+    margin-left: 0px;
+  }
+}
+@media only screen and (max-width:900px){
+  
+  .tag-item{
+    min-width: 250px;
+  }
+  .text-block{
+    margin-left: 0px;
+  }
+}
  .catalog-img:hover{
   opacity: 1;
 }
@@ -530,4 +571,7 @@ footer{
 .category-search{
   margin-bottom: 50px;
   margin-left: -30px;
+}
+.tag-item-tag{
+  margin-bottom: 10px;
 }
