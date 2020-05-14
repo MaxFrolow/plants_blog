@@ -118,35 +118,56 @@
         <div class="container content-sec">
             <div class="row">
                 <!--Content Section-->
-                <div class="col-md-8 col-sm-8 col-lg-8">
+                <div class="col-md-8 col-sm-8 col-lg-8 personal-info">
                     <div class="container">
-                            <!--Content-->
-                        <div class="contact-container">
-                            <h2>Напишите Нам</h2>
-                            <form class="contuct-us">
-                                <div class="radiobox">
-                                    <label for="category" class="contuct-us-category">Причина</label><br>
-                                    <input type="radio" id="personal" name="category" value="personal">
-                                    <label for="personal">Личное</label><br>
-                                    <input type="radio" id="advertisement" name="category" value="advertisement">
-                                    <label for="advertisement">Реклама</label><br>
-                                    <input type="radio" id="bugs" name="category" value="bugs">
-                                    <label for="bugs">Баги</label>
-                                </div>
-                                
-
-                                <label for="header" class="contact-us-header-label">Тема</label><br>
-                                <input type="text" name="header" class="form-input"><br>
-
-                                <label for="message" class="contact-us-message-label">Сообщение</label><br>
-                                <textarea  class="form-input area-field"></textarea><br>
-                                <button class="contact-us-button" type="submit" >Отправить</button>
-                            </form>
+                      <form>
+                        <div class="row">
+                          
+                          <!--Avatar-->
+                          <div class="col-md-4 avatar-sec">
+                            <img src="images/default_avatart.png">
+                            <div class="change-avatar">
+                              <a class="change-avatar change-data" href="#">Сменить Аватар</a>
                             </div>
+                          </div>
+                          <!--Avatar-->
+
+                          <!--Information-->
+                          <div class="col-md-6 inform-sec">
+                            
+                            <table class="inform-table">
+                              
+                              <tr>
+                                <td>Email:</td>
+                                <td><input type="email" class="form-input cabinet-form" value="myemail@gmail.com"></td>
+                              </tr>
+                              <tr>
+                                <td>Имя:</td>
+                                <td><input type="text" class="form-input cabinet-form" value="Пользователь"></td>
+                              </tr>
+                              <tr>
+                                <td>Пароль:</td>
+                                <td><a class="change-data" href="Изменить">Изменить</a></td>
+                              </tr>
+                              <tr>
+                                <td>Розсилка:</td>
+                                <td><input type="checkbox"></td>
+                              </tr>
+                              <tr>
+                                <td><button class="contact-us-button" type="submit" >Сохранить</button></td>
+                              </tr>
+                            </table>
+                            
+                          
+                          </div>
+                          <!--Information-->
                         </div>
+                      </form>    
+                        
                     </div>
-                </div>
-            </div>
+                 </div>
+              </div>
+         </div>
       </content>
 
       <footer>

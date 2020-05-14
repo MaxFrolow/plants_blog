@@ -618,9 +618,9 @@ footer{
 .tag-item-tag{
   margin-bottom: 10px;
 }
-.back-link{
+.back-to-home{
   margin-left:30px;
-  text-align:center;
+  margin-top: 10px;
   vertical-align: bottom;
 }
 .login-window{
@@ -727,4 +727,37 @@ footer{
     width:400px;
     height: 150px;
   }
+}
+.personal-info{
+  margin-top: 5%;
+}
+.avatar-sec{
+  align-content: center;
+  max-width: 200px;
+  padding: 0px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+}
+.avatar-sec img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.change-avatar{
+  text-align: center;
+}
+.inform-table{
+  margin-top: 10px;
+  margin-bottom: 83px;
+}
+.change-data{
+  color: blue;
+}
+.inform-table td{
+  padding-top: 20px;
+  width:100px;
+}
+.cabinet-form{
+  margin-bottom: 0px;
 }
