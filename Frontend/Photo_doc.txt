@@ -1,0 +1,19 @@
+16X10 - 1280:800, 1440:900, 1680:1050, 1920:1200 
+16X9 - 1920x1080, 1600×900, 1366×768, 1280x720 
+4X3 - 1024×768, 1152×864, 1600×1200
+
+Для статті є наявні класи в залежності від співвідношення сторін, слас позначений літерою "l"(large) в кінці означає велике зображення(На всю ширину статті). З позначками в кінці s_left та s_right відповідно малі фото з оптіканям тексту(Зліва фото і текст зправа і фото зправа а текст зліва відповідно)
+Копіпаст для вставки:
+<img src="path.to.file" class="img16x10l">
+<img src="path.to.file" class="img16x10s_left">
+<img src="path.to.file" class="img16x10s_right">
+<img src="path.to.file" class="img16x9l">
+<img src="path.to.file" class="img16x9s_left">
+<img src="path.to.file" class="img16x9s_right">
+<img src="path.to.file" class="img4x3l">
+<img src="path.to.file" class="img4x3s_left">
+<img src="path.to.file" class="img4x3s_right">
+
+!!!
+Фото для заголовку статті треба обрізати у співвідношенні 5:4
+!!!

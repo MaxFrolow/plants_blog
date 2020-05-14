@@ -191,3 +191,23 @@
   height: 120px;
 }
 }
+@media only screen and (max-width:575px){
+  .img16x10l{
+    width: 400px;
+    height: 250px;
+    margin-left: 0px;
+  }
+
+.img16x9l{
+  width: 400px;
+  height: 225px;
+}
+
+.img4x3l{
+  width: 400px;
+  height: 300px;
+}
+
+}
+
+

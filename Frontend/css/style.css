@@ -1,9 +1,4 @@
-@media only screen and (min-width:880px){
-.row{
-  width: 115%;
-  margin-left: -2%;
-  } 
-}
+
 a:hover{
   text-decoration: none;
   color: rgb(0, 0, 0);
@@ -22,6 +17,9 @@ a{
   margin-top: 70px;
 
 }
+.content-sec{
+  margin-bottom: 100px;
+}
 
 .nav a{
   color: rgb(0, 0, 0) !important;
@@ -31,6 +29,10 @@ a{
 }
 .nav-link:hover{
   color: rgba(0, 0, 0, 1) !important;
+}
+.nav-log-in{
+  margin-left: -25px;
+  margin-right: -40px;
 }
 .my-dropdown{
   opacity: 0.85 !important;
@@ -117,10 +119,10 @@ a{
 .head-text{
   position: relative;
   z-index: 3;
-  height:135px;
-  margin-top: -135px;
+  height:120px;
+  margin-top: -120px;
   background-color: rgb(0, 0, 0 );
-  opacity: 0.5;
+  opacity: 0.5; 
 }
 
 @media only screen and (max-width: 1199px) and (min-width: 992px)  {
@@ -206,6 +208,7 @@ a{
 .list-item{
   margin-bottom: 4%;
   margin-left: 30px;
+  margin-right: 20px;
 
 }
 .list-item img{
@@ -251,8 +254,44 @@ a{
 .list-item a:hover{
   color: rgba(0, 0, 0, 1)
 }
+.comments-area{
+  margin-top: 50px;
+}
+.comments-create{
+  padding-top: 40px;
+  margin-bottom: 30px;
+  border-top: 2px dashed;
 
-.teg-panel a{
+}
+.comments-section{
+  margin-top: 50px;
+}
+.comment-avatar {
+  max-width: 200px;
+}
+.comment img{
+  max-width: 160px;
+}
+.comment{
+  padding-top:50px;
+  margin-top: 50px;
+  border-top: 2px dashed;
+}
+.comments-textbox{
+  margin-top: 10px;
+}
+
+.comments img{
+  max-width: 200px;
+  padding: 0px;
+}
+@media only screen and (max-width:991px){
+  .comments img{
+    max-width: 150px;
+  }
+}
+
+.tag{
   background-color: rgb(70, 70, 70);
   color: rgb(216, 215, 215);
   padding: 5px;
@@ -260,16 +299,27 @@ a{
   padding-right: 10px;
   border-radius: 15px;
 }
-.teg-panel p{
+.tag:hover{
+color: rgba(255, 255, 255, 1);
+}
+.tag-panel p{
   line-height: 250%;
 }
 .side-bar{
+  margin-left: 80px;
   margin-bottom: 100px;
   margin-top: 30px;
-  
+  max-width: 250px;
 }
+@media only screen and (max-width: 991px){
+  .side-bar{
+    margin-left: 5px;
+  }
+}
+
 .favorite{
   margin-bottom: 30px;
+  max-width: 250px;
 }
 
 .favorite-image{
@@ -466,3 +516,248 @@ footer{
     margin-left: -4%;
     } 
   }
+@media only screen and (max-width:768px){
+  .post{
+    width: 115%;
+    margin-left: -4%;
+    } 
+  }
+  @media only screen and (max-width:768px){
+    .post{
+      width: 110%;
+      margin-left: -4%;
+
+      } 
+    }
+
+
+.text-block{
+  margin-left: 60px;
+}
+
+.tag-item-block{
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-bottom: 120px;
+}
+@media only screen and (max-width:1200px) and (min-width: 991px){
+  .tag-item-block{
+    margin-right: -40px;
+  }
+}
+.tag-item{
+  border: 1px solid black;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  padding-bottom: 20px;
+}
+@media only screen and (max-width:990px){
+  .tag-item{
+  padding-left: 0px;
+  }
+}
+.main-tag-text{
+  margin-top: 20px;
+}
+.main-tag-text h3, .main-tag-text p{
+  color: rgba(0, 0, 0, 0.8);
+}
+.catalog-img{
+  margin-top: 20px;
+  width: 250px;
+  height: 200px;
+  margin-bottom: 15px;
+  opacity: 0.85;
+}
+@media only screen and (max-width:1150px) and (min-width:991px){
+  .catalog-img{
+    width: 200px;
+    height: 160px;
+    margin-top: 30px;
+  }
+  .text-block{
+    margin-left: 50px;
+  }
+}
+@media only screen and (max-width:990px){
+  .catalog-img{
+    width:200px;
+    height:160px;
+    margin-left: 10px;
+  }
+  .tag-item{
+    margin-right: 20px;
+  }
+  .text-block{
+    margin-left: 0px;
+  }
+}
+@media only screen and (max-width:900px){
+  
+  .tag-item{
+    min-width: 250px;
+  }
+  .text-block{
+    margin-left: 0px;
+  }
+}
+ .catalog-img:hover{
+  opacity: 1;
+}
+.main-tag-text h3:hover, .main-tag-text p:hover{
+  color: rgba(0, 0, 0, 1);
+}
+.catalog-pagination{
+  margin-left: 50px;
+  margin-top: 50px;
+}
+.category-search{
+  margin-bottom: 50px;
+  margin-left: -30px;
+}
+.tag-item-tag{
+  margin-bottom: 10px;
+}
+.back-to-home{
+  margin-left:30px;
+  margin-top: 10px;
+  vertical-align: bottom;
+}
+.login-window{
+  border: 2px solid rgba(70, 70, 70, 0.6);
+  border-radius: 10px;
+  width:400px;
+  margin: auto;
+  margin-top: 10%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  padding-bottom: 10px;
+}
+.registration{
+  margin-top: 5%;
+}
+.login-window h2{
+  text-align: center;
+  margin-top: 40px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.login-form{
+  width: 300px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 90px;
+ }
+ .login-form label, .contuct-us label{
+   font-weight: 400;
+   margin-bottom: 0px;
+   font-size: 1.4em;
+ }
+ .form-input{
+  width: 300px;
+  height: 40px;
+  border: 2px solid rgba(0, 0, 0, 0.4 );
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: medium;
+  margin-bottom: 20px;
+ }
+ .form-input:hover{
+  border: 2px solid rgba(0, 0, 0, 0.7);
+ }
+ .password-forgot{
+   float: left;
+ }
+ .login-button{
+  border: 2px solid rgb(70, 70, 70);
+   border-radius: 6px;
+   width: 90px;
+   height: 50px;
+   float: right;
+   color:rgb(70, 70, 70);
+   font-weight: 600;
+   font-size: 1.1em;
+ }
+ .login-button:hover{
+   background-color: rgb(68, 68, 68);
+   color: white;
+   border-color: rgb(68, 68, 68);
+ }
+ .form-link{
+  color:rgba(0, 0, 0, 0.85);
+  font-weight:600;
+ }
+ .sign-up{
+   margin-left: 20px;
+ }
+ .reset-pw-message{
+   margin-top: 50px;
+   margin-bottom: 50px;
+   margin-left: 50px;
+   max-width: 300px;
+ }
+ .contact-container{
+   margin-top: 100px;
+   margin-bottom: 150px;
+ }
+ .radiobox{
+   margin-bottom: 30px;
+ }
+ .contact-us-button{
+  margin-top: 50px;
+  border: 2px solid rgb(70, 70, 70);
+  border-radius: 6px;
+  width: 150px;
+  height: 50px;
+  float: left;
+  color:black;
+  font-weight: 600;
+  font-size: 1.1em;
+}
+.contact-us-button:hover{
+  background-color: rgb(87, 177, 45);
+  color: white;
+  border-color: rgb(87, 177, 45);
+}
+.area-field{
+  width: 600px;
+  height: 200px;
+}
+@media only screen and (max-width:740px){
+  .area-field{
+    width:400px;
+    height: 150px;
+  }
+}
+.personal-info{
+  margin-top: 5%;
+}
+.avatar-sec{
+  align-content: center;
+  max-width: 200px;
+  padding: 0px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+}
+.avatar-sec img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.change-avatar{
+  text-align: center;
+}
+.inform-table{
+  margin-top: 10px;
+  margin-bottom: 83px;
+}
+.change-data{
+  color: blue;
+}
+.inform-table td{
+  padding-top: 20px;
+  width:100px;
+}
+.cabinet-form{
+  margin-bottom: 0px;
+}
