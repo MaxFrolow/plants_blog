@@ -254,6 +254,42 @@ a{
 .list-item a:hover{
   color: rgba(0, 0, 0, 1)
 }
+.comments-area{
+  margin-top: 50px;
+}
+.comments-create{
+  padding-top: 40px;
+  margin-bottom: 30px;
+  border-top: 2px dashed;
+
+}
+.comments-section{
+  margin-top: 50px;
+}
+.comment-avatar {
+  max-width: 200px;
+}
+.comment img{
+  max-width: 160px;
+}
+.comment{
+  padding-top:50px;
+  margin-top: 50px;
+  border-top: 2px dashed;
+}
+.comments-textbox{
+  margin-top: 10px;
+}
+
+.comments img{
+  max-width: 200px;
+  padding: 0px;
+}
+@media only screen and (max-width:991px){
+  .comments img{
+    max-width: 150px;
+  }
+}
 
 .tag{
   background-color: rgb(70, 70, 70);
@@ -582,6 +618,11 @@ footer{
 .tag-item-tag{
   margin-bottom: 10px;
 }
+.back-link{
+  margin-left:30px;
+  text-align:center;
+  vertical-align: bottom;
+}
 .login-window{
   border: 2px solid rgba(70, 70, 70, 0.6);
   border-radius: 10px;
@@ -680,4 +721,10 @@ footer{
 .area-field{
   width: 600px;
   height: 200px;
+}
+@media only screen and (max-width:740px){
+  .area-field{
+    width:400px;
+    height: 150px;
+  }
 }
